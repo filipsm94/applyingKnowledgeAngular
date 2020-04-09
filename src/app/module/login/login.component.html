@@ -1,1 +1,11 @@
-<p>login works!</p>
+<div [formGroup]="loginForm">
+    <label>
+        <span>Full name</span>
+        <input type="text" placeholder="Your full name" formControlName="name">
+    </label>
+    <label>
+        <span>Email address</span>
+        <input type="password" placeholder="Your passwornd" formControlName="pass">
+    </label>
+    <button (click)="loginAction()" *ngIf="loginForm.valid" [disabled]="!loginForm.valid" >Login</button>
+</div>
