@@ -3,7 +3,9 @@
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node launch.js",
+    "dev": "ng serve",
+    "dev-net": "ng serve --host 0.0.0.0 --disableHostCheck",
     "build": "ng build",
     "test": "ng test --code-coverage",
     "lint": "ng lint",
